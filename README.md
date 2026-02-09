@@ -1,9 +1,9 @@
-# 📊 Scientometric Time Series Forecasting  
+#  Scientometric Time Series Forecasting  
 ### Large-Scale Forecasting of Brazilian Scientific Production Using LSTM and Nonlinear Regression
 
 ---
 
-## 🚀 Overview
+##  Overview
 
 This project implements a complete **time-series forecasting pipeline** to model and predict long-term trends in Brazilian scientific production using real-world large-scale academic data.
 
@@ -19,7 +19,7 @@ The forecasting framework developed here is directly transferable to:
 
 ---
 
-## 🎯 Problem Statement
+##  Problem Statement
 
 Scientific production evolves under the influence of:
 
@@ -30,9 +30,9 @@ Scientific production evolves under the influence of:
 
 This project models and forecasts:
 
-- 📄 Journal publications  
-- 🔬 Research projects  
-- 🎓 Academic advisories  
+-  Journal publications  
+-  Research projects  
+-  Academic advisories  
 
 Across the 8 major CAPES knowledge areas in Brazil.
 
@@ -45,7 +45,7 @@ The goal is to:
 
 ---
 
-## 📚 Dataset
+##  Dataset
 
 ### Sources
 
@@ -70,7 +70,7 @@ The goal is to:
 
 ---
 
-## 🏗 Pipeline Architecture
+##  Pipeline Architecture
 
 End-to-end workflow
 
@@ -85,9 +85,9 @@ End-to-end workflow
 
 ---
 
-## 🤖 Models Implemented
+##  Models Implemented
 
-### 1️⃣ Polynomial Nonlinear Regression
+### 1️ Polynomial Nonlinear Regression
 
 - High-degree polynomial fitting
 - Deterministic closed-form solution
@@ -95,7 +95,7 @@ End-to-end workflow
 
 ---
 
-### 2️⃣ LSTM (Long Short-Term Memory)
+###  LSTM (Long Short-Term Memory)
 
 Deep recurrent neural network designed to capture:
 
@@ -113,7 +113,7 @@ Configuration:
 
 ---
 
-## 📈 Evaluation Strategy
+##  Evaluation Strategy
 
 Proper time-series validation:
 
@@ -135,7 +135,7 @@ Evaluation performed across:
 
 ---
 
-## 🔎 Key Findings
+##  Key Findings
 
 - Polynomial regression performs competitively in stable growth regimes.
 - LSTM significantly outperforms regression during:
@@ -148,7 +148,7 @@ Evaluation performed across:
 
 ---
 
-## 💡 Technical Highlights
+## Technical Highlights
 
 - Real-world large-scale dataset  
 - Deep learning applied to structured time-series data  
