@@ -72,5 +72,92 @@ The goal is to:
 
 ## 🏗 Pipeline Architecture
 
-End-to-end workflow:
+End-to-end workflow
+
+
+### Engineering Decisions
+
+- Strict chronological splitting (no data leakage)
+- Sequence windowing for LSTM training
+- Feature scaling per series
+- Modular model abstraction
+- Deterministic seed control for reproducibility
+
+---
+
+## 🤖 Models Implemented
+
+### 1️⃣ Polynomial Nonlinear Regression
+
+- High-degree polynomial fitting
+- Deterministic closed-form solution
+- Interpretable long-term trend baseline
+
+---
+
+### 2️⃣ LSTM (Long Short-Term Memory)
+
+Deep recurrent neural network designed to capture:
+
+- Long-range temporal dependencies  
+- Nonlinear growth patterns  
+- Structural regime shifts  
+
+Configuration:
+
+- Sliding input windows  
+- Dense output layer  
+- ReLU activation  
+- Adam optimizer  
+- Early stopping  
+
+---
+
+## 📈 Evaluation Strategy
+
+Proper time-series validation:
+
+- Train: Historical segment  
+- Validation: Recent years  
+- Test: Final unseen segment  
+
+### Metrics
+
+- RMSE (Root Mean Squared Error)  
+- MAE (Mean Absolute Error)  
+- MAPE (Mean Absolute Percentage Error)  
+
+Evaluation performed across:
+
+- Knowledge areas  
+- Model classes  
+- Volatility regimes  
+
+---
+
+## 🔎 Key Findings
+
+- Polynomial regression performs competitively in stable growth regimes.
+- LSTM significantly outperforms regression during:
+  - High volatility periods  
+  - Post-peak structural decline  
+  - Recovery phases  
+- Most knowledge areas peaked between 2010–2020.
+- Post-2020 decline observed across multiple domains.
+- Forecasts suggest partial recovery without full return to historical maxima.
+
+---
+
+## 💡 Technical Highlights
+
+- Real-world large-scale dataset  
+- Deep learning applied to structured time-series data  
+- Baseline vs neural model comparison  
+- Quantitative performance evaluation  
+- Reproducible ML pipeline  
+- Cross-domain comparative analysis  
+
+---
+
+
 
